@@ -7,35 +7,48 @@
 </head>
 
 <body>
-
-  <h1>Contact Me</h1>
-  <table>
-      <tr>
-          <th>Contact Information</th>
-          <th>Send a Message</th>
-      </tr>
-      <tr>
-          <td>
-              <strong>Email:</strong> <a href="mailto:example@example.com">example@example.com</a><br>
-              <strong>Phone:</strong> (123) 456-7890<br>
-              <strong>Address:</strong> 1234 Main Street, Anytown, USA
-          </td>
-          <td>
-              <form action="submit_form.php" method="post">
-                  <label for="name">Name:</label><br>
-                  <input type="text" id="name" name="name" required><br><br>
-
-                  <label for="email">Email:</label><br>
-                  <input type="email" id="email" name="email" required><br><br>
-
-                  <label for="message">Message:</label><br>
-                  <textarea id="message" name="message" rows="4" required></textarea><br><br>
-
-                  <button type="submit">Send</button>
-              </form>
-          </td>
-      </tr>
-  </table>
-
-</body>
+    <a href="index.html">
+      <h2>Home</h2>  
+    </a>  
+  
+    <header>
+      <h3>Contact Me!</h3>
+      <br>
+    </header>
+  
+    <fieldset>
+      <legend>contact information</legend>
+      <form action="mailto:lama2015678@gmail.com" method="post" enctype="text/plain">
+        <table>
+  
+          <tr>
+              <td ><label for="name">Name:</label></td>
+              <td><input type="text" id="name" name="name" placeholder="Enter Your name..."></td>
+          </tr>
+  
+          <tr>
+              <td><label for="email">Email:</label></td>
+              <td><input type="email" id="email" name="email" placeholder="Enter Your email..."></td>
+          </tr>
+  
+          <tr>
+              <td><label for="message">Message:</label></td>
+              <td><textarea id="message" name="message" rows="5" placeholder="Write your message..."></textarea></td>
+          </tr>
+  
+          <tr>
+              <td colspan="2">
+                  <input type="submit" value="Send Message">
+                <input type="reset" value="reset">
+              </td>
+          </tr>
+  
+      </table>
+  
+      </form>
+  
+  </fieldset>
+   
+      
+  </body>
 </html>
